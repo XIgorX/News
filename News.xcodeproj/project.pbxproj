@@ -10,15 +10,13 @@
 		782F87052017126100A78D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F87042017126100A78D81 /* AppDelegate.swift */; };
 		782F87072017126100A78D81 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F87062017126100A78D81 /* NewsViewController.swift */; };
 		782F870A2017126100A78D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782F87082017126100A78D81 /* Main.storyboard */; };
-		782F870D2017126100A78D81 /* News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 782F870B2017126100A78D81 /* News.xcdatamodeld */; };
 		782F870F2017126100A78D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782F870E2017126100A78D81 /* Assets.xcassets */; };
 		782F87122017126100A78D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782F87102017126100A78D81 /* LaunchScreen.storyboard */; };
 		789DE5C92017281F005B5964 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5C82017281F005B5964 /* NewsTableViewCell.swift */; };
 		789DE5CB20173FC2005B5964 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5CA20173FC2005B5964 /* NewsDetailViewController.swift */; };
 		789DE5D020179774005B5964 /* News+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5CC20179774005B5964 /* News+CoreDataClass.swift */; };
 		789DE5D120179774005B5964 /* News+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5CD20179774005B5964 /* News+CoreDataProperties.swift */; };
-		789DE5D220179774005B5964 /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5CE20179774005B5964 /* Content+CoreDataClass.swift */; };
-		789DE5D320179774005B5964 /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5CF20179774005B5964 /* Content+CoreDataProperties.swift */; };
+		789DE5D92018E757005B5964 /* News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 789DE5D72018E74F005B5964 /* News.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +24,6 @@
 		782F87042017126100A78D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		782F87062017126100A78D81 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		782F87092017126100A78D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		782F870C2017126100A78D81 /* News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = News.xcdatamodel; sourceTree = "<group>"; };
 		782F870E2017126100A78D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782F87112017126100A78D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		782F87132017126100A78D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,8 +31,7 @@
 		789DE5CA20173FC2005B5964 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		789DE5CC20179774005B5964 /* News+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+CoreDataClass.swift"; sourceTree = "<group>"; };
 		789DE5CD20179774005B5964 /* News+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		789DE5CE20179774005B5964 /* Content+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataClass.swift"; sourceTree = "<group>"; };
-		789DE5CF20179774005B5964 /* Content+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		789DE5D82018E74F005B5964 /* News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = News.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +50,6 @@
 			children = (
 				789DE5CC20179774005B5964 /* News+CoreDataClass.swift */,
 				789DE5CD20179774005B5964 /* News+CoreDataProperties.swift */,
-				789DE5CE20179774005B5964 /* Content+CoreDataClass.swift */,
-				789DE5CF20179774005B5964 /* Content+CoreDataProperties.swift */,
 				782F87032017126100A78D81 /* News */,
 				782F87022017126100A78D81 /* Products */,
 			);
@@ -76,11 +70,11 @@
 				782F87042017126100A78D81 /* AppDelegate.swift */,
 				782F87062017126100A78D81 /* NewsViewController.swift */,
 				789DE5CA20173FC2005B5964 /* NewsDetailViewController.swift */,
+				789DE5D72018E74F005B5964 /* News.xcdatamodeld */,
 				782F87082017126100A78D81 /* Main.storyboard */,
 				782F870E2017126100A78D81 /* Assets.xcassets */,
 				782F87102017126100A78D81 /* LaunchScreen.storyboard */,
 				782F87132017126100A78D81 /* Info.plist */,
-				782F870B2017126100A78D81 /* News.xcdatamodeld */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -164,13 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789DE5D92018E757005B5964 /* News.xcdatamodeld in Sources */,
 				782F87072017126100A78D81 /* NewsViewController.swift in Sources */,
-				782F870D2017126100A78D81 /* News.xcdatamodeld in Sources */,
-				789DE5D320179774005B5964 /* Content+CoreDataProperties.swift in Sources */,
 				789DE5D020179774005B5964 /* News+CoreDataClass.swift in Sources */,
 				789DE5C92017281F005B5964 /* NewsTableViewCell.swift in Sources */,
 				782F87052017126100A78D81 /* AppDelegate.swift in Sources */,
-				789DE5D220179774005B5964 /* Content+CoreDataClass.swift in Sources */,
 				789DE5CB20173FC2005B5964 /* NewsDetailViewController.swift in Sources */,
 				789DE5D120179774005B5964 /* News+CoreDataProperties.swift in Sources */,
 			);
@@ -359,12 +351,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		782F870B2017126100A78D81 /* News.xcdatamodeld */ = {
+		789DE5D72018E74F005B5964 /* News.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				782F870C2017126100A78D81 /* News.xcdatamodel */,
+				789DE5D82018E74F005B5964 /* News.xcdatamodel */,
 			);
-			currentVersion = 782F870C2017126100A78D81 /* News.xcdatamodel */;
+			currentVersion = 789DE5D82018E74F005B5964 /* News.xcdatamodel */;
 			path = News.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

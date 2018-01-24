@@ -33,29 +33,29 @@ class NewsDetailViewController: UIViewController {
         //fetching the data from the url
         URLSession.shared.dataTask(with: (url as URL?)!, completionHandler: {(data, response, error) -> Void in
             
-            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
-                
-                var content : String = ""
-                
-                //printing the json in console
-                print(jsonObj!.value(forKey: "payload")!)
-                
-                //getting dictionary from json and converting it to NSDictionary
-                if let payload = jsonObj!.value(forKey: "payload") as? NSDictionary {
+            if (data != nil)
+            {
 
-                    content = (payload.value(forKey: "content") as? String)!
-                }
+                if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
                 
-                //sort array
+                    var content : String = ""
                 
-                //newsArray = newsArray.sorted{(($0["publicationDate"]! as! NSDictionary)["milliseconds"]! as! String) < (($1["publicationDate"]! as! NSDictionary)["milliseconds"]! as! String)}
+                    //printing the json in console
+                    print(jsonObj!.value(forKey: "payload")!)
                 
-                //reload data
-                DispatchQueue.main.async {
-                    //self.textView.attributedText = content
-                    //self.textView.text = content
-                    self.webView.loadHTMLString(content, baseURL:nil)
+                    //getting dictionary from json and converting it to NSDictionary
+                    if let payload = jsonObj!.value(forKey: "payload") as? NSDictionary {
 
+                        content = (payload.value(forKey: "content") as? String)!
+                    }
+                
+                    //reload data
+                    DispatchQueue.main.async {
+                        //self.textView.attributedText = content
+                        //self.textView.text = content
+                        self.webView.loadHTMLString(content, baseURL:nil)
+
+                    }
                 }
             }
         }).resume()
